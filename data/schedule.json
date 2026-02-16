@@ -1,0 +1,6 @@
+[
+  { "id": "1", "day": "水曜日", "time": "16:30〜18:00", "location": "○○小学校グラウンド", "target": "1〜3年生", "note": "", "status": "published", "createdAt": "2026-02-01T09:00:00", "updatedAt": "2026-02-01T09:00:00" },
+  { "id": "2", "day": "水曜日", "time": "16:30〜18:30", "location": "○○小学校グラウンド", "target": "4〜6年生", "note": "", "status": "published", "createdAt": "2026-02-01T09:00:00", "updatedAt": "2026-02-01T09:00:00" },
+  { "id": "3", "day": "土曜日", "time": "9:00〜12:00", "location": "総合運動公園", "target": "全学年", "note": "雨天時は体育館", "status": "published", "createdAt": "2026-02-01T09:00:00", "updatedAt": "2026-02-01T09:00:00" },
+  { "id": "4", "day": "日曜日", "time": "—", "location": "—", "target": "—", "note": "試合・大会（不定期）", "status": "published", "createdAt": "2026-02-01T09:00:00", "updatedAt": "2026-02-01T09:00:00" }
+]

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ふじみDXラボFC | 静岡県富士市の少年サッカークラブ</title>
+  <meta name="description" content="「サッカーを楽しむ心を育てる。」富士市で活動する少年サッカークラブ。小学1〜6年生、男女問わず部員募集中！">
+  <link rel="canonical" href="https://example.com/">
+  <!-- OGP -->
+  <meta property="og:title" content="ふじみDXラボFC | 静岡県富士市の少年サッカークラブ">
+  <meta property="og:description" content="「サッカーを楽しむ心を育てる。」富士市で活動する少年サッカークラブ。小学1〜6年生、男女問わず部員募集中！">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <meta property="og:image" content="https://example.com/images/hero-bg.jpg">
+  <meta property="og:site_name" content="ふじみDXラボFC">
+  <meta property="og:locale" content="ja_JP">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ふじみDXラボFC | 静岡県富士市の少年サッカークラブ">
+  <meta name="twitter:description" content="「サッカーを楽しむ心を育てる。」富士市で活動する少年サッカークラブ。">
+  <meta name="twitter:image" content="https://example.com/images/hero-bg.jpg">
+  <!-- Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="images/hero-bg.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Noto+Sans+JP:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- JSON-LD: SportsTeam -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SportsTeam",
+    "name": "ふじみDXラボFC",
+    "alternateName": "FUJIMI DX LAB Football Club",
+    "url": "https://example.com/",
+    "image": "https://example.com/images/hero-bg.jpg",
+    "description": "「サッカーを楽しむ心を育てる。」静岡県富士市で活動する少年サッカークラブ。",
+    "sport": "サッカー",
+    "telephone": "+81-545-00-3333",
+    "email": "fc@fujimi-dx-lab.example.com",
+    "foundingDate": "2010",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "□□町4-5-6",
+      "addressLocality": "富士市",
+      "addressRegion": "静岡県",
+      "postalCode": "416-0000",
+      "addressCountry": "JP"
+    },
+    "coach": {
+      "@type": "Person",
+      "name": "藤見 健一",
+      "jobTitle": "代表・監督"
+    },
+    "memberOf": {
+      "@type": "Organization",
+      "name": "静岡県サッカー協会"
+    }
+  }
+  </script>
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://example.com/"}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <a href="index.html">
+          <span>FUJIMI DX LAB FC</span>
+          <p class="logo-sub">少年サッカークラブ</p>
+        </a>
+      </div>
+      <button class="menu-toggle" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="active">ホーム</a></li>
+          <li><a href="#news">お知らせ</a></li>
+          <li><a href="#schedule">スケジュール</a></li>
+          <li><a href="#about">チーム紹介</a></li>
+          <li><a href="#join">入会案内</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="header-tel">
+        <p class="tel-label">お問い合わせ</p>
+        <p class="tel-number">0545-00-3333</p>
+        <p class="tel-hours">事務局（平日 18:00〜20:00）</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg" style="background-image: url('images/hero-bg.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-sub">FUJIMI DX LAB Football Club</p>
+      <h1 class="hero-title">FUJIMI DX LAB FC</h1>
+      <p class="hero-concept">サッカーを楽しむ心を育てる。</p>
+      <p class="hero-desc">静岡県富士市で活動する少年サッカークラブ。<br>小学1年生〜6年生、男女問わず部員募集中です。</p>
+      <a href="#join" class="btn-primary">入会のご案内</a>
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="news" id="news">
+    <div class="container">
+      <p class="section-title-en reveal">News</p>
+      <h2 class="section-title reveal">お知らせ</h2>
+      <ul class="news-list reveal" id="news-list">
+        <!-- JS で動的に挿入 -->
+      </ul>
+      <div class="section-more reveal">
+        <a href="news.html" class="btn-outline">お知らせ一覧を見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section class="schedule-section" id="schedule">
+    <div class="container">
+      <p class="section-title-en reveal">Schedule</p>
+      <h2 class="section-title reveal">練習スケジュール</h2>
+      <p class="section-desc reveal">週2〜3回の練習で、基礎からしっかり身につけます。</p>
+      <div id="schedule-list">
+        <!-- JS で動的に挿入 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <p class="section-title-en reveal">About</p>
+      <h2 class="section-title reveal">チーム紹介</h2>
+      <div class="about-body">
+        <p class="about-text reveal">
+          ふじみDXラボFCは2010年に設立された、静岡県富士市の少年サッカークラブです。<br>
+          「サッカーを楽しむ心を育てる」を理念に、勝利だけにこだわらず、<br>
+          子どもたちが自ら考え、仲間と協力し、成長できる環境づくりを大切にしています。<br><br>
+          代表・監督の藤見健一を中心に、JFA公認資格を持つコーチ陣が<br>
+          一人ひとりのレベルに合わせた丁寧な指導を行っています。<br>
+          現在約35名の部員が在籍し、富士市内の大会や県大会にも積極的に参加しています。
+        </p>
+        <div class="practice-grid reveal">
+          <div class="practice-grid-item">
+            <img src="images/practice-01.jpg" alt="練習風景1" loading="lazy" width="400" height="240">
+          </div>
+          <div class="practice-grid-item">
+            <img src="images/practice-02.jpg" alt="練習風景2" loading="lazy" width="400" height="240">
+          </div>
+          <div class="practice-grid-item">
+            <img src="images/practice-03.jpg" alt="練習風景3" loading="lazy" width="400" height="240">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join -->
+  <section class="join-section" id="join">
+    <div class="container">
+      <p class="section-title-en reveal">Join Us</p>
+      <h2 class="section-title reveal">入会案内</h2>
+      <p class="section-desc reveal">体験参加は随時受付中です。お気軽にお問い合わせください。</p>
+      <div class="join-cards">
+        <div class="join-card reveal" data-delay="0">
+          <div class="join-card-icon">&#9917;</div>
+          <h3>対象</h3>
+          <p>小学1年生〜6年生<br>（男女問わず）</p>
+        </div>
+        <div class="join-card reveal" data-delay="100">
+          <div class="join-card-icon">&#128176;</div>
+          <h3>費用</h3>
+          <p class="join-price">&yen;3,000<span style="font-size:14px;color:var(--color-text-light);font-family:var(--font-base);">/月</span></p>
+          <p class="join-price-note">入会金: &yen;5,000（ユニフォーム代含む）</p>
+        </div>
+        <div class="join-card reveal" data-delay="200">
+          <div class="join-card-icon">&#127890;</div>
+          <h3>持ち物</h3>
+          <p>運動できる服装・シューズ<br>サッカーボール（貸出あり）<br>水筒・タオル</p>
+        </div>
+        <div class="join-card reveal" data-delay="300">
+          <div class="join-card-icon">&#128222;</div>
+          <h3>お問い合わせ先</h3>
+          <p>TEL: <a href="tel:0545003333" style="color:var(--color-accent);font-weight:700;">0545-00-3333</a><br>
+          Mail: <a href="mailto:fc@fujimi-dx-lab.example.com" style="color:var(--color-accent);font-weight:700;">fc@fujimi-dx-lab.example.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="section-title-en reveal" style="color:rgba(255,255,255,0.5);">Contact</p>
+      <h2 class="section-title section-title-light reveal">お問い合わせ</h2>
+      <p class="contact-desc reveal">入会・体験のお申し込み、その他ご質問はお気軽にどうぞ。</p>
+      <div class="contact-methods reveal">
+        <div class="contact-card">
+          <h3>お電話</h3>
+          <p class="contact-tel"><a href="tel:0545003333" style="color:#fff;">0545-00-3333</a></p>
+          <p class="contact-hours">平日 18:00〜20:00（事務局）</p>
+        </div>
+        <div class="contact-card">
+          <h3>メール</h3>
+          <p class="contact-email"><a href="mailto:fc@fujimi-dx-lab.example.com" style="color:#fff;">fc@fujimi-dx-lab.example.com</a></p>
+          <p class="contact-hours">24時間受付・2営業日以内に返信</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <p class="footer-company">FUJIMI DX LAB FC</p>
+          <p class="footer-company-jp">ふじみDXラボFC</p>
+          <p class="footer-address">〒416-0000 静岡県富士市□□町4-5-6（事務局）</p>
+          <p class="footer-tel">TEL: 0545-00-3333</p>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="#news">お知らせ</a></li>
+            <li><a href="#schedule">スケジュール</a></li>
+            <li><a href="#about">チーム紹介</a></li>
+            <li><a href="#join">入会案内</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 ふじみDXラボFC All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Contact Float -->
+  <div class="mobile-contact-float">
+    <a href="tel:0545003333" aria-label="お問い合わせ">TEL: 0545-00-3333</a>
+  </div>
+
+  <script src="js/news-store.js" defer></script>
+  <script src="js/schedule-store.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
