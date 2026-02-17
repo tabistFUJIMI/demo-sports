@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // --- Store Init ---
   const inits = [];
   if (typeof NewsStore !== 'undefined' && NewsStore.init) inits.push(NewsStore.init());
+  if (typeof GalleryStore !== 'undefined' && GalleryStore.init) inits.push(GalleryStore.init());
   if (typeof ScheduleStore !== 'undefined' && ScheduleStore.init) inits.push(ScheduleStore.init());
   await Promise.all(inits);
 
@@ -75,6 +76,25 @@ document.addEventListener('DOMContentLoaded', async () => {
     if (news.length === 0) {
       newsList.innerHTML = '<li style="color:#888;padding:24px 0;">現在お知らせはありません。</li>';
     }
+  }
+
+  // --- Dynamic Gallery Preview (Top page: 3件) ---
+  const galleryPreview = document.getElementById('gallery-preview');
+  if (galleryPreview && typeof GalleryStore !== 'undefined') {
+    const items = GalleryStore.getPublished().slice(0, 3);
+    galleryPreview.innerHTML = items.map(g => `
+      <div class="gallery-card reveal">
+        <div class="gallery-card-img">
+          <img src="${g.image}" alt="${g.title}" loading="lazy">
+          <span class="gallery-card-category">${g.category}</span>
+        </div>
+        <div class="gallery-card-body">
+          <h3>${g.title}</h3>
+          <p>${g.description.slice(0, 60)}...</p>
+        </div>
+      </div>
+    `).join('');
+    reobserve(galleryPreview);
   }
 
   // --- Dynamic Schedule (Top page) ---
